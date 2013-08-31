@@ -1,0 +1,7 @@
+source "https://rubygems.org"
+ruby "2.0.0"
+gem "sinatra", :require => "sinatra/base"
+gem "sinatra-reloader"
+gem "sinatra-partial"
+gem "json"
+gem "instagram"
