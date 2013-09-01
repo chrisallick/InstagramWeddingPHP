@@ -30,6 +30,9 @@ Instagram = function( _pics, _el ) {
 			}
 			img.onerror = function() {
 				self.loaded++;
+				if( self.loaded == self.pics.length-1 ) {
+					$(self.photos).addClass("on");			
+				}
 			}
 			img.src = self.pics[i];
 		}
@@ -82,7 +85,7 @@ Instagram = function( _pics, _el ) {
 
 		setTimeout(function(){
 			$(el).remove();
-			setTimeout( function(){ self.animate(); }, getRandomInt( 1000, 4000 ));
+			setTimeout( function(){ self.animate(); }, getRandomInt( 1000, 3000 ));
 		}, 2250);
 	}
 }
