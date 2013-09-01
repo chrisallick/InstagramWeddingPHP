@@ -38,27 +38,87 @@ Instagram = function( _pics, _el ) {
 
 	this.animate = function() {
 		clearTimeout( self.t );
+		// pick one
 		var img = getRandomInt( 0, self.images.length-1 );
 		var el = $(".photo:eq("+img+")");
-
-
+		// pick next one
 		img = getRandomInt( 0, self.images.length-1 );
 		var next = self.images[img].cloneNode();
-		$(next).css({
-			left: -200
-		});
 
-		$(el).after(next);
+		var direction = getRandomInt(0, 3);
+		switch(direction) {
+		case 0:
+			$(next).css({
+				top: -200
+			});
 
-		$(el).addClass("slideOut").css({
-			left: $(el).width()+2
-		});
+			$(el).after(next);
 
-		$(next).animate({
-			left: -1
-		}, 600, function() {
-			$(el).remove();
-			self.t = setTimeout( self.animate, 1000 );
-		})
+			$(el).addClass("slideOut").css({
+				top: $(el).height()+2
+			});
+
+			$(next).animate({
+				top: -1
+			}, 600, function() {
+				$(el).remove();
+				self.t = setTimeout( self.animate, 1000 );
+			});
+			break;
+		case 1:
+			$(next).css({
+				left: -200
+			});
+
+			$(el).after(next);
+
+			$(el).addClass("slideOut").css({
+				left: $(el).width()+2
+			});
+
+			$(next).animate({
+				left: -1
+			}, 600, function() {
+				$(el).remove();
+				self.t = setTimeout( self.animate, 1000 );
+			});
+		 	break;
+		case 2:
+			$(next).css({
+				top: 200
+			});
+
+			$(el).after(next);
+
+			$(el).addClass("slideOut").css({
+				top: -$(el).height()+2
+			});
+
+			$(next).animate({
+				top: -1
+			}, 600, function() {
+				$(el).remove();
+				self.t = setTimeout( self.animate, 1000 );
+			});
+		 	break;
+		 case 3:
+			$(next).css({
+				left: 200
+			});
+
+			$(el).after(next);
+
+			$(el).addClass("slideOut").css({
+				left: -$(el).width()+2
+			});
+
+			$(next).animate({
+				left: -1
+			}, 600, function() {
+				$(el).remove();
+				self.t = setTimeout( self.animate, 1000 );
+			});
+		 	break;
+		}
 	}
 }
