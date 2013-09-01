@@ -37,7 +37,7 @@ Instagram = function( _pics, _el ) {
 	}
 
 	this.animate = function() {
-		clearTimeout( self.t );
+		//clearTimeout( self.t );
 		// pick one
 		var img = getRandomInt( 0, self.images.length-1 );
 		var el = $(".photo:eq("+img+")");
@@ -58,12 +58,13 @@ Instagram = function( _pics, _el ) {
 				top: $(el).height()+2
 			});
 
-			$(next).animate({
+			$(next).css({
 				top: -1
-			}, 600, function() {
-				$(el).remove();
-				self.t = setTimeout( self.animate, 1000 );
 			});
+			// , 600, 'linear', function() {
+			// 	$(el).remove();
+			// 	self.t = setTimeout( self.animate, 1000 );
+			// });
 			break;
 		case 1:
 			$(next).css({
@@ -76,12 +77,13 @@ Instagram = function( _pics, _el ) {
 				left: $(el).width()+2
 			});
 
-			$(next).animate({
+			$(next).css({
 				left: -1
-			}, 600, function() {
-				$(el).remove();
-				self.t = setTimeout( self.animate, 1000 );
 			});
+			// , 600, 'linear', function() {
+			// 	$(el).remove();
+			// 	self.t = setTimeout( self.animate, 1000 );
+			// });
 		 	break;
 		case 2:
 			$(next).css({
@@ -94,12 +96,13 @@ Instagram = function( _pics, _el ) {
 				top: -$(el).height()+2
 			});
 
-			$(next).animate({
+			$(next).css({
 				top: -1
-			}, 600, function() {
-				$(el).remove();
-				self.t = setTimeout( self.animate, 1000 );
 			});
+			//, 600, 'linear', function() {
+			// 	$(el).remove();
+			// 	self.t = setTimeout( self.animate, 1000 );
+			// });
 		 	break;
 		 case 3:
 			$(next).css({
@@ -112,13 +115,19 @@ Instagram = function( _pics, _el ) {
 				left: -$(el).width()+2
 			});
 
-			$(next).animate({
+			$(next).css({
 				left: -1
-			}, 600, function() {
-				$(el).remove();
-				self.t = setTimeout( self.animate, 1000 );
 			});
+			// , 600, 'linear', function() {
+			// 	$(el).remove();
+			// 	self.t = setTimeout( self.animate, 1000 );
+			// });
 		 	break;
 		}
+
+		setTimeout(function(){
+			$(el).remove();
+			self.animate();
+		}, 1000)
 	}
 }
