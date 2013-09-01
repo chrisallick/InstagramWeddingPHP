@@ -42,8 +42,6 @@ results["data"].each do |data|
 	pics.push(data["images"]["low_resolution"]["url"])
 end
 
-#puts results["pagination"]["next_url"]
-
 uri = URI.parse(results["pagination"]["next_url"])
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true

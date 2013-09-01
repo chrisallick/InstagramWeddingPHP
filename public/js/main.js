@@ -4,5 +4,5 @@ $(window).load(function(){
 
 var instagram;
 $(document).ready(function() {
-	instagram = new Instagram( $("#photos") );
+	instagram = new Instagram( pics, $("#photos") );
 });
