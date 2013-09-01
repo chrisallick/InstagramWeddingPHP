@@ -23,7 +23,7 @@ Instagram = function( _pics, _el ) {
 				photo.appendChild(this.cloneNode());
 				$(_el).append(photo);
 				self.loaded++;
-				if( self.loaded = self.pics.length ) {
+				if( self.loaded == self.pics.length-1 ) {
 					$(self.photos).addClass("on");			
 				}
 			}
