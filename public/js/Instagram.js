@@ -6,6 +6,7 @@ Instagram = function( _pics, _el ) {
 	this.t;
 	this.resizing = false;
 	this.loaded = 0;
+	this.lastAnimated = 0;
 
 	$(window).resize(function() {
 		// clearTimeout( self.t );
@@ -33,101 +34,55 @@ Instagram = function( _pics, _el ) {
 			img.src = self.pics[i];
 		}
 		
-		self.t = setTimeout( self.animate, 1000 );
+		setTimeout( function(){ self.animate(); }, 1000);
 	}
 
 	this.animate = function() {
 		//clearTimeout( self.t );
+
 		// pick one
 		var img = getRandomInt( 0, self.images.length-1 );
+		if( img == self.lastAnimated ) {
+			console.log("repeat");
+			self.animate();
+			return false;
+		}
 		var el = $(".photo:eq("+img+")");
+		self.lastAnimated = img;
+
 		// pick next one
 		img = getRandomInt( 0, self.images.length-1 );
 		var next = self.images[img].cloneNode();
 
+		$(el).after(next);
+
 		var direction = getRandomInt(0, 3);
 		switch(direction) {
 		case 0:
-			$(next).css({
-				top: -200
-			});
-
-			$(el).after(next);
-
-			$(el).addClass("slideOut").css({
-				top: $(el).height()+2
-			});
-
-			$(next).css({
-				top: -1
-			});
-			// , 600, 'linear', function() {
-			// 	$(el).remove();
-			// 	self.t = setTimeout( self.animate, 1000 );
-			// });
+			$(next).css("left", "-200px");
+			$(el).animate({ left: '200px' }, 2000, 'easeInOutBack');
+			$(next).animate({ left: '0px' }, 2000, 'easeInOutBack');
 			break;
 		case 1:
-			$(next).css({
-				left: -200
-			});
-
-			$(el).after(next);
-
-			$(el).addClass("slideOut").css({
-				left: $(el).width()+2
-			});
-
-			$(next).css({
-				left: -1
-			});
-			// , 600, 'linear', function() {
-			// 	$(el).remove();
-			// 	self.t = setTimeout( self.animate, 1000 );
-			// });
+			$(next).css("left", "200px");
+			$(el).animate({ left: '-200px' }, 2000, 'easeInOutBack');
+			$(next).animate({ left: '0px' }, 2000, 'easeInOutBack');
 		 	break;
 		case 2:
-			$(next).css({
-				top: 200
-			});
-
-			$(el).after(next);
-
-			$(el).addClass("slideOut").css({
-				top: -$(el).height()+2
-			});
-
-			$(next).css({
-				top: -1
-			});
-			//, 600, 'linear', function() {
-			// 	$(el).remove();
-			// 	self.t = setTimeout( self.animate, 1000 );
-			// });
+			$(next).css("top", "200px");
+			$(el).animate({ top: '-200px' }, 2000, 'easeInOutBack');
+			$(next).animate({ top: '0px' }, 2000, 'easeInOutBack');
 		 	break;
 		 case 3:
-			$(next).css({
-				left: 200
-			});
-
-			$(el).after(next);
-
-			$(el).addClass("slideOut").css({
-				left: -$(el).width()+2
-			});
-
-			$(next).css({
-				left: -1
-			});
-			// , 600, 'linear', function() {
-			// 	$(el).remove();
-			// 	self.t = setTimeout( self.animate, 1000 );
-			// });
+			$(next).css("top", "-200px");
+			$(el).animate({ top: '200px' }, 2000, 'easeInOutBack');
+			$(next).animate({ top: '0px' }, 2000, 'easeInOutBack');
 		 	break;
 		}
 
 		setTimeout(function(){
 			$(el).remove();
-			self.animate();
-		}, 1000)
+			setTimeout( function(){ self.animate(); }, getRandomInt( 1000, 4000 ));
+		}, 2250);
 	}
 }
