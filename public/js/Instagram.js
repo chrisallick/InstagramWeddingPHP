@@ -64,14 +64,14 @@ Instagram = function( _pics, _el ) {
 			$(next).animate({ left: '0px' }, 2000, 'easeInOutBack');
 			break;
 		case 1:
-			$(next).css("left", "200px");
-			$(el).animate({ left: '-200px' }, 2000, 'easeInOutBack');
-			$(next).animate({ left: '0px' }, 2000, 'easeInOutBack');
-		 	break;
-		case 2:
 			$(next).css("top", "200px");
 			$(el).animate({ top: '-200px' }, 2000, 'easeInOutBack');
 			$(next).animate({ top: '0px' }, 2000, 'easeInOutBack');
+		 	break;
+		case 2:
+			$(next).css("left", "200px");
+			$(el).animate({ left: '-200px' }, 2000, 'easeInOutBack');
+			$(next).animate({ left: '0px' }, 2000, 'easeInOutBack');
 		 	break;
 		 case 3:
 			$(next).css("top", "-200px");
