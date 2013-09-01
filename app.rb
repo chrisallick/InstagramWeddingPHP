@@ -1,8 +1,18 @@
 require 'sinatra'
 require 'sinatra/partial'
 require 'sinatra/reloader' if development?
-require 'json'
+
+"""
+	Instagram APIzzle
+"""
 require "instagram"
+
+"""
+	manual
+"""
+require "net/https"
+require "uri"
+require 'json'
 
 # Instagram.configure do |config|
 #   config.client_id = "b363e5fb49f54a1b90f3b974d9d5300e"
@@ -15,8 +25,8 @@ require "instagram"
 # 	puts tag
 # end
 
-require "net/https"
-require "uri"
+
+pics = []
 
 uri = URI.parse("https://api.instagram.com/v1/tags/wedding/media/recent?access_token=23858448.b363e5f.c5cb4bc2e0bf430ca6456863abbccab6")
 http = Net::HTTP.new(uri.host, uri.port)
@@ -28,13 +38,25 @@ request = Net::HTTP::Get.new(uri.request_uri)
 response = http.request(request)
 results = JSON.parse(response.body)
 
-pics = []
 results["data"].each do |data|
 	pics.push(data["images"]["low_resolution"]["url"])
 end
 
-puts results["pagination"]["next_url"]
-puts ""
+#puts results["pagination"]["next_url"]
+
+uri = URI.parse(results["pagination"]["next_url"])
+http = Net::HTTP.new(uri.host, uri.port)
+http.use_ssl = true
+http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+request = Net::HTTP::Get.new(uri.request_uri)
+
+response = http.request(request)
+results = JSON.parse(response.body)
+
+results["data"].each do |data|
+	pics.push(data["images"]["low_resolution"]["url"])
+end
 
 puts pics
 
