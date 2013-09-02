@@ -21,12 +21,21 @@ Instagram = function( _pics, _el ) {
 		self.rows = Math.ceil($(document).height()/204);
 		self.cols = Math.ceil($(document).width()/204);
 		self.visible = self.rows * self.cols;
+		
 		console.log( self.rows, self.cols, self.visible );
 
+		var load = self.pics.length;
+		if( self.visible < self.pics.length-1 ) {
+			load = self.visible;
+		}
 
-		for( var i = 0, len = self.pics.length; i < len; i++ ) {
+		for( var i = 0, len = load-1; i < len; i++ ) {
 			var img = new Image();
+			var obj = {};
+			self.items[i] = obj;
+			obj["used"] = true;
 			img.onload = function() {
+				obj["img"] = this;
 				self.images.push(this);
 				this.className = "photo";
 				var photo = document.createElement("div");
@@ -34,13 +43,13 @@ Instagram = function( _pics, _el ) {
 				photo.appendChild(this.cloneNode());
 				$(_el).append(photo);
 				self.loaded++;
-				if( self.loaded == self.pics.length-1 ) {
+				if( self.loaded == load-1 ) {
 					$(self.photos).addClass("on");			
 				}
 			}
 			img.onerror = function() {
 				self.loaded++;
-				if( self.loaded == self.pics.length-1 ) {
+				if( self.loaded == load-1 ) {
 					$(self.photos).addClass("on");			
 				}
 			}
