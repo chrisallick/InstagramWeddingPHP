@@ -2,11 +2,15 @@ Instagram = function( _pics, _el ) {
 	self = this;
 	this.pics = _pics;
 	this.images = [];
+	this.items = {};
 	this.photos = _el;
 	this.t;
 	this.resizing = false;
 	this.loaded = 0;
 	this.lastAnimated = 0;
+	this.rows = 0;
+	this.cols = 0;
+	this.visible = 0; 
 
 	$(window).resize(function() {
 		// clearTimeout( self.t );
@@ -14,6 +18,12 @@ Instagram = function( _pics, _el ) {
 	});
 
 	this.load = function() {
+		self.rows = Math.ceil($(document).height()/204);
+		self.cols = Math.ceil($(document).width()/204);
+		self.visible = self.rows * self.cols;
+		console.log( self.rows, self.cols, self.visible );
+
+
 		for( var i = 0, len = self.pics.length; i < len; i++ ) {
 			var img = new Image();
 			img.onload = function() {
@@ -85,7 +95,7 @@ Instagram = function( _pics, _el ) {
 
 		setTimeout(function(){
 			$(el).remove();
-			setTimeout( function(){ self.animate(); }, getRandomInt( 1000, 3000 ));
+			setTimeout( function(){ self.animate(); }, getRandomArbitary( 500, 2000 ));
 		}, 2250);
 	}
 }
