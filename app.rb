@@ -28,7 +28,7 @@ require 'json'
 
 pics = []
 
-uri = URI.parse("https://api.instagram.com/v1/tags/wedding/media/recent?access_token=23858448.b363e5f.c5cb4bc2e0bf430ca6456863abbccab6")
+uri = URI.parse("https://api.instagram.com/v1/tags/craigandbeegetmarried/media/recent?access_token=23858448.b363e5f.c5cb4bc2e0bf430ca6456863abbccab6")
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true
 http.verify_mode = OpenSSL::SSL::VERIFY_NONE

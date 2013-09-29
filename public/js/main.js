@@ -2,23 +2,27 @@ $(window).load(function(){
 	instagram.load();
 });
 
-var instagram;
+var instagram, faded = false;
 $(document).ready(function() {
 	instagram = new Instagram( pics, $("#photos") );
 
-	$("#hashtag").css({
-		top: $(document).height()/2 - ($("#hashtag").height()+60)/2,
-		left: $(document).width()/2 - ($("#hashtag").width()+60)/2
+	$("#hashtag p").css({
+		top: $(document).height()/2 - ($("#hashtag p").height())/2,
+		//left: $(document).width()/2 - ($("#hashtag p").width())/2
 	}).animate({
 		opacity: 1
 	});
 
 	$(window).resize(function(){
-		$("#hashtag").css({
-			top: $(document).height()/2 - ($("#hashtag").height()+60)/2,
-			left: $(document).width()/2 - ($("#hashtag").width()+60)/2
+		$("#hashtag p").css({
+			top: $(document).height()/2 - ($("#hashtag p").height()+60)/2
+			//left: $(document).width()/2 - ($("#hashtag").width()+60)/2
 		});
 	});
+
+	$("#hashtag").mousemove(function(){
+		$(this).delay(250).fadeOut();
+	})
 
 	$("#nav .gettinghere").click(function(event){
 		event.preventDefault();
