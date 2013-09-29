@@ -19,4 +19,9 @@ $(document).ready(function() {
 			left: $(document).width()/2 - ($("#hashtag").width()+60)/2
 		});
 	});
+
+	$("#nav .gettinghere").click(function(event){
+		event.preventDefault();
+		$("#gettinghere").slideDown();
+	})
 });
