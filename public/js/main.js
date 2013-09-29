@@ -1,5 +1,9 @@
 $(window).load(function(){
 	instagram.load();
+
+	$("#hashtag").mousemove(function(){
+		$(this).delay(250).fadeOut();
+	});
 });
 
 var instagram, faded = false;
@@ -20,9 +24,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$("#hashtag").mousemove(function(){
-		$(this).delay(250).fadeOut();
-	})
+
 
 	$("#nav .gettinghere").click(function(event){
 		event.preventDefault();
