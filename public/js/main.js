@@ -22,6 +22,28 @@ $(document).ready(function() {
 
 	$("#nav .gettinghere").click(function(event){
 		event.preventDefault();
-		$("#gettinghere").slideDown();
-	})
+		if( $("#gettinghere").hasClass("open") ) {
+			$("#gettinghere").slideUp().removeClass("open");
+		} else {
+			$("#gettinghere").slideDown().addClass("open");
+		}
+	});
+
+	$("#nav .schedule").click(function(event){
+		event.preventDefault();
+		if( $("#schedule").hasClass("open") ) {
+			$("#schedule").slideUp().removeClass("open");
+		} else {
+			$("#schedule").slideDown().addClass("open");
+		}
+	});
+
+	$("#nav .registry").click(function(event){
+		event.preventDefault();
+		if( $("#registry").hasClass("open") ) {
+			$("#registry").slideUp().removeClass("open");
+		} else {
+			$("#registry").slideDown().addClass("open");
+		}
+	});
 });
