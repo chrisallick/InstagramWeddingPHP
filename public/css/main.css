@@ -31,3 +31,4 @@ img { display: block; width: 202px; height: 202px; opacity: 1; position: absolut
 #gettinghere h2 { margin-bottom: 10px; font-weight: bold; font-family: 'myriad'; }
 #gettinghere p { margin-bottom: 20px; font-family: 'myriad'; }
 #gettinghere p a { color: #FFFFFF; }
+#gettinghere td { width: 100px; font-family: 'myriad';  }
