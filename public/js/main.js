@@ -1,8 +1,11 @@
 $(window).load(function(){
-	instagram.load();
-
-	$("#hashtag").mousemove(function(){
-		$(this).delay(250).fadeOut();
+	instagram.load(function(){
+		$("#hashtag").mousemove(function(){
+			$(this).delay(500).fadeOut('slow');
+			$("#nav").animate({
+				opacity: 1
+			})
+		});
 	});
 });
 
@@ -28,6 +31,8 @@ $(document).ready(function() {
 
 	$("#nav .gettinghere").click(function(event){
 		event.preventDefault();
+		$("#registry").hide();
+		$("#schedule").hide();
 		if( $("#gettinghere").hasClass("open") ) {
 			$("#gettinghere").slideUp().removeClass("open");
 		} else {
@@ -37,6 +42,8 @@ $(document).ready(function() {
 
 	$("#nav .schedule").click(function(event){
 		event.preventDefault();
+		$("#registry").hide();
+		$("#gettinghere").hide();
 		if( $("#schedule").hasClass("open") ) {
 			$("#schedule").slideUp().removeClass("open");
 		} else {
@@ -46,6 +53,8 @@ $(document).ready(function() {
 
 	$("#nav .registry").click(function(event){
 		event.preventDefault();
+		$("#gettinghere").hide();
+		$("#schedule").hide();
 		if( $("#registry").hasClass("open") ) {
 			$("#registry").slideUp().removeClass("open");
 		} else {

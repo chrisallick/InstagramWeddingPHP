@@ -11,13 +11,15 @@ Instagram = function( _pics, _el ) {
 	this.rows = 0;
 	this.cols = 0;
 	this.visible = 0; 
+	this.onLoad;
 
 	$(window).resize(function() {
 		// clearTimeout( self.t );
 		// self.t = setTimeout( self.animate, getRandomInt( 2000, 5000 ) );
 	});
 
-	this.load = function() {
+	this.load = function( _onLoad ) {
+		self.onLoad = _onLoad;
 		self.rows = Math.ceil($(document).height()/204);
 		self.cols = Math.ceil($(document).width()/204);
 		self.visible = self.rows * self.cols;
@@ -44,13 +46,14 @@ Instagram = function( _pics, _el ) {
 				$(_el).append(photo);
 				self.loaded++;
 				if( self.loaded == load-1 ) {
-					$(self.photos).addClass("on");			
+					$(self.photos).addClass("on");
+					self.onLoad();		
 				}
 			}
 			img.onerror = function() {
 				self.loaded++;
 				if( self.loaded == load-1 ) {
-					$(self.photos).addClass("on");			
+					$(self.photos).addClass("on");	
 				}
 			}
 			img.src = self.pics[i];

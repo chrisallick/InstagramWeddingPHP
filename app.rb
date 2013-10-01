@@ -56,6 +56,20 @@ results["data"].each do |data|
 	pics.push(data["images"]["low_resolution"]["url"])
 end
 
+uri = URI.parse(results["pagination"]["next_url"])
+http = Net::HTTP.new(uri.host, uri.port)
+http.use_ssl = true
+http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+request = Net::HTTP::Get.new(uri.request_uri)
+
+response = http.request(request)
+results = JSON.parse(response.body)
+
+results["data"].each do |data|
+	pics.push(data["images"]["low_resolution"]["url"])
+end
+
 puts pics
 
 get '/' do

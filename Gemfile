@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.0.0"
+ruby "1.9.3"
 gem "sinatra", :require => "sinatra/base"
 gem "sinatra-reloader"
 gem "sinatra-partial"
