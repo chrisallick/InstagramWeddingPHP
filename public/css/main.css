@@ -27,22 +27,19 @@ img { display: block; width: 202px; height: 202px; opacity: 1; position: absolut
 #hashtag { width: 100%; height: 100%; position: absolute; z-index: 10000; top: 0px; left: 0px; background-color: rgba( 0, 0, 0, .8); }
 #hashtag p { color: #FFFFFF; font: bold 100px 'myriad'; text-align: center; position: absolute; width: 100%; text-align: center; }
 
-#content { max-width: 900px; min-width: 640px; margin: 0 auto; position: relative; z-index: 100; height: 500px; overflow-y: scroll; }
+#content { max-width: 900px; min-width: 640px; margin: 0 auto; position: relative; z-index: 100; height: 500px; display: none; }
+#content h2 { font-weight: bold; font-family: 'myriad'; font-size: 20px; }
+#content p { margin-bottom: 10px; font-family: 'myriad'; line-height: 19px; }
+#content p span.italics { font-style: italic; }
+#content p a { color: #FFFFFF; text-decoration: underline; }
+#content td { width: 100px; font-family: 'myriad';  }
+#content .close { color: #FFFFFF; position: absolute; top: 1px; right: 1px; padding: 5px 10px; font-family: 'myriad'; border: 1px solid white; cursor: pointer; }
 
-#gettinghere { color: #FFFFFF; padding: 15px; background: #000000; display: none; }
-#gettinghere h2 { margin-bottom: 10px; font-weight: bold; font-family: 'myriad'; }
-#gettinghere p { margin-bottom: 20px; font-family: 'myriad'; }
-#gettinghere p a { color: #FFFFFF; }
-#gettinghere td { width: 100px; font-family: 'myriad';  }
+#content ul { list-style-type: disc; list-style-position: inside; margin-bottom: 10px; }
+#content ul li { font-family: 'myriad'; }
+#content ul li { padding-left: 10px; margin-bottom: 6px; }
+#content ul li a { color: #FFFFFF; text-decoration: underline; }
 
-#schedule { color: #FFFFFF; padding: 15px; background: #000000; display: none; }
-#schedule h2 { margin-bottom: 10px; font-weight: bold; font-family: 'myriad'; }
-#schedule p { margin-bottom: 20px; font-family: 'myriad'; }
-#schedule p a { color: #FFFFFF; }
-#schedule td { width: 100px; font-family: 'myriad'; }
-
-#registry { color: #FFFFFF; padding: 15px; background: #000000; display: none; }
-#registry h2 { margin-bottom: 10px; font-weight: bold; font-family: 'myriad'; }
-#registry p { margin-bottom: 20px; font-family: 'myriad'; }
-#registry p a { color: #FFFFFF; }
-#registry td { width: 100px; font-family: 'myriad';  }
+#gettinghere { color: #FFFFFF; padding: 30px; background: #000000; display: none; overflow-y: scroll; height: 500px; }
+#schedule { color: #FFFFFF; padding: 30px; background: #000000; display: none; }
+#registry { color: #FFFFFF; padding: 30px; background: #000000; display: none; }
