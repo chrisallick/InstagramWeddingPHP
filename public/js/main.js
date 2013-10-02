@@ -1,33 +1,43 @@
-$(window).load(function(){
-	instagram.load(function(){
-		$("#hashtag").mousemove(function(){
-			$(this).delay(500).fadeOut('slow');
-			$("#nav").animate({
-				opacity: 1
-			})
+runFade = function() {
+	faded = true;
+	clearTimeout( ft );
+	$("#hashtag").fadeOut('slow', function() {
+		$("#nav").animate({
+			opacity: 1
 		});
+	});
+
+}
+$(window).load(function(){
+	instagram.load(function() {
+		if( !faded ) {
+			$("#hashtag").mousemove(function() {
+				clearTimeout( ft );
+				runFade();
+			});
+		}
+
+		ft = setTimeout( runFade, 5000 );
 	});
 });
 
-var instagram, faded = false;
+var instagram, faded = false, ft;
 $(document).ready(function() {
 	instagram = new Instagram( pics, $("#photos") );
 
-	$("#hashtag p").css({
-		top: $(document).height()/2 - ($("#hashtag p").height())/2,
-		//left: $(document).width()/2 - ($("#hashtag p").width())/2
+	$("#hashtag img").css({
+		top: $(document).height()/2 - ($("#hashtag img").height())/2,
+		left: $(document).width()/2 - ($("#hashtag img").width())/2
 	}).animate({
 		opacity: 1
 	});
 
 	$(window).resize(function(){
-		$("#hashtag p").css({
-			top: $(document).height()/2 - ($("#hashtag p").height()+60)/2
-			//left: $(document).width()/2 - ($("#hashtag").width()+60)/2
+		$("#hashtag img").css({
+			top: $(document).height()/2 - ($("#hashtag img").height()+60)/2,
+			left: $(document).width()/2 - ($("#hashtag img").width()+60)/2
 		});
 	});
-
-
 
 	$("#nav .gettinghere").click(function(event){
 		event.preventDefault();

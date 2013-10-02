@@ -25,7 +25,7 @@ img { display: block; width: 202px; height: 202px; opacity: 1; position: absolut
 #nav ul li a { color: #FFFFFF; text-align: center; width: 100%; height: 100%; display: block; font-family: 'myriad'; padding: 12px 0px; font-size: 20px; }
 
 #hashtag { width: 100%; height: 100%; position: absolute; z-index: 10000; top: 0px; left: 0px; background-color: rgba( 0, 0, 0, .8); }
-#hashtag p { color: #FFFFFF; font: bold 100px 'myriad'; text-align: center; position: absolute; width: 100%; text-align: center; }
+#hashtag img { display: block; width: 1297px; height: 123px; position: absolute; top: 0px; left: 0px; }
 
 #content { max-width: 900px; min-width: 640px; margin: 0 auto; position: relative; z-index: 100; height: 500px; overflow-y: scroll; }
 
