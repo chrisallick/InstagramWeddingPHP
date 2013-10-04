@@ -33,7 +33,7 @@ img { display: block; width: 202px; height: 202px; opacity: 1; position: absolut
 #content p span.italics { font-style: italic; }
 #content p a { color: #FFFFFF; text-decoration: underline; }
 #content td { width: 100px; font-family: 'myriad';  }
-#content .close { color: #FFFFFF; position: absolute; top: 1px; right: 1px; padding: 5px 10px; font-family: 'myriad'; border: 1px solid white; cursor: pointer; }
+#content .close { color: #FFFFFF; position: absolute; top: 6px; right: 21px; padding: 5px 10px; font-family: 'myriad'; border: 1px solid white; cursor: pointer; }
 
 #content ul { list-style-type: disc; list-style-position: inside; margin-bottom: 10px; }
 #content ul li { font-family: 'myriad'; }
