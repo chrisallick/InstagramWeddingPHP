@@ -63,17 +63,17 @@
 
                     <h2>A Day on the Mountain</h2>
                     <p>Saturday<br />
-                    <p>This is a day for us all to spend on the mountain. Skiing, tubing, skating.</p>
-                    <p>Planning for this day is still underway. Possibilities include: snow picnic, group tubing, fire and ice party, ice skating.</p>                    
+                    This is a day for us all to spend on the mountain.<br />
+                    Planning for this day is still underway. Possibilities include: snow picnic or ice skating.</p>                    
                     <p>Saturday Evening<br />
-                    <p>If there is a plan, we’ll post it here!</p>
+                    If there is a plan, we’ll post it here!</p>
 
                     <br />
                     <br />
 
                     <h2>Coffee and Donuts Snow Picnic Send-Off</h2>
                     <p>Sunday, 10-12<br />
-                    <p>Before you head out of Tahoe, stop by to witness the grandeur of our Snowman Gallery and the crowning of our contest winner. Plus, coffee and donuts. Location TBD.</p>
+                    Before you head out of Tahoe, stop by to witness the grandeur of our Snowman Gallery and the crowning of our contest winner. Plus, coffee and donuts. Location TBD.</p>
                 </div>
                 <div id="gettinghere">
                     <p>If possible, please arrive for our Welcome Gathering at 8:30 on Thursday night.</p>
