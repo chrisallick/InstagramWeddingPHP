@@ -95,31 +95,33 @@
                     <p>Taxis run between Reno Airport and Northstar 24 Hours. Service is roughly $90 one way for up to 4 people, $10 each additional person.  Try Lakeshore Taxi at 530.544.3600 or Elite Tahoe Taxi at 530.580.8294. Advanced reservations are recommended, especially for groups.</p>
 
                     <p>A more affordable option, especially for singles, is <a href="http://www.northlaketahoeexpress.com/">North Lake Tahoe Express Shuttle</a>. It’s a scheduled shuttle for $45 one way (or less, if you have more people). Advance reservations are required. Call 866.216.5222. Here are the times:</p>
-                    <p>Leaving Reno Airport daily at:</p>
+                    <p class="indent">Leaving Reno Airport daily at:</p>
                     <table>
                         <tr>
-                            <td>8:00am</td>
+                            <td class="indent">8:00am</td>
                             <td>1:00pm</td>
                             <td>5:30pm</td>
                             <td>11:15pm</td>
                         </tr>
                         <tr>
-                            <td>11:15am</td>
+                            <td class="indent">11:15am</td>
                             <td>3:15pm</td>
                             <td>7:30pm</td>
                             <td></td>
                         </tr>
                     </table>
-
-                    <p>Leaving Northstar Village for the airport daily at:</p>
+                    
+                    <br />
+                    
+                    <p class="indent">Leaving Northstar Village for the airport daily at:</p>
                     <table>
                         <tr>
-                            <td>4:00am</td>
+                            <td class="indent">4:00am</td>
                             <td>9:15am</td>
                             <td>5:15pm</td>
                         </tr>
                         <tr>
-                            <td>6:00am</td>
+                            <td class="indent">6:00am</td>
                             <td>1:15pm</td>
                             <td></td>
                         </tr>
@@ -138,7 +140,7 @@
                     <p>Use <a href="">this map</a> to see the area. Prices are weeknight/weekend.</p>
 
                     <p class="indent">TAHOE MOUNTAIN RESORTS LODGING: These are really plush, right in the Village with gourmet kitchens, living rooms, fireplaces, full-size washer dryers, underground parking and balconies. Some sleep up to 10. The buildings are: Big Horn, Catamount, Great Bear, Iron Horse and One Village Place (Ignore “Old Greenwood” and “Constellation Residences.”) There is no group rate, but these are still a great deal for 4 or more people; we highly recommend! <a href="http://tinyurl.com/lp2qdlc">See pics here</a> To reserve, call 800.757.7563</p>
-                    <ul>
+                    <ul class="indent">
                         <li>1 bedroom $349/$479</li>
                         <li>2 bedroom $479/$689</li>
                         <li>3 bedroom $759/$899</li>
@@ -146,7 +148,7 @@
                     </ul>
 
                     <p class="indent">NORTHSTAR LODGING: For these reservations call 1.800.GO.NORTH and use group code GB4RMW. You may need to wait for a call back. <a href="http://www.northstarcalifornia.com/info/ski/trip-planning/accommodations-overview.asp#rooms">See pics here</a> but remember the rates here do not reflect our discount. Discounted rates are listed below.</p>
-                    <ul>
+                    <ul class="indent">
                         <li>Village Rooms: 1 or 2 queen beds, 1 bath, balcony, elevator, daily maid, $196/$217</li>
                         <li>Village Lofts: 1 bedroom with queen sized beds, 1 bath, living room, fireplace, kitchen, balcony, ski in/out, elevator, daily maid, $273/301</li>
                         <li>Ski Trails Condos: proper ski in/out 1 and 2 bedrooms, 1 bath, kitchen, fireplace, living room, short walk to the Village, some with loft, ask for “Skyview;” it’s closest to the Village. $231/$252</li>
@@ -154,7 +156,7 @@
                     </ul>
 
                     <p class="indent">OUTSIDE THE VILLAGE: Once more, we don't recommend staying outside the village. If you are staying in Gold Bend, Indian Hills or lower Aspen Grove, you will need the shuttle. <a href="http://www.northstarcalifornia.com/info/ski/trip-planning/northstar-mountain-condominiums.asp">Pics here</a>; prices below.</p>
-                    <ul>
+                    <ul class="indent">
                         <li>2 BR, 1 Bath Condos, $294/$315</li>
                         <li>2 BR, 2 Bath Condos , $315/$343</li>
                         <li>3 BR, 2 Bath Condos, $406/$427</li>
@@ -191,7 +193,7 @@
                     <h2>I don’t slide down mountains on planks of any kind...</h2>
                     <p>No worries! Visit the schedule tab for our basic itinerary of non-downhill stuff. Also, here are a few suggestions. Some require reservations so plan ahead!</p>
 
-                    <ul>
+                    <ul class="indent">
                         <li>The Northstar Lodging options include free ice-skating and 2 free skate rentals at the Village Rink. Look for the vouchers in your check-in packet!</li>
                         <li>Lodging also comes with $2 access to the outdoor spas, pools, fitness center, game room and arcade</li>
                         <li>Stop by to add your own creative Snowman to our Contest Gallery. Prizes awarded at the Donuts and Coffee Send Off on Sunday morning. Location TBD.</li>
