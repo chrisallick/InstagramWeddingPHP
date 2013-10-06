@@ -95,7 +95,7 @@
                     <p>Taxis run between Reno Airport and Northstar 24 Hours. Service is roughly $90 one way for up to 4 people, $10 each additional person.  Try Lakeshore Taxi at 530.544.3600 or Elite Tahoe Taxi at 530.580.8294. Advanced reservations are recommended, especially for groups.</p>
 
                     <p>A more affordable option, especially for singles, is <a href="http://www.northlaketahoeexpress.com/">North Lake Tahoe Express Shuttle</a>. It’s a scheduled shuttle for $45 one way (or less, if you have more people). Advance reservations are required. Call 866.216.5222. Here are the times:</p>
-                    <p class="indent">Leaving Reno Airport daily at:</p>
+                    <p class="indent no-margin">Leaving Reno Airport daily at:</p>
                     <table>
                         <tr>
                             <td class="indent">8:00am</td>
@@ -113,7 +113,7 @@
                     
                     <br />
                     
-                    <p class="indent">Leaving Northstar Village for the airport daily at:</p>
+                    <p class="indent no-margin">Leaving Northstar Village for the airport daily at:</p>
                     <table>
                         <tr>
                             <td class="indent">4:00am</td>
@@ -137,7 +137,7 @@
 
                     <p>Many options have kitchens, multiple bedrooms and baths,  and livings rooms (some with pull-outs). The best way to save is by buddying up!</p>
 
-                    <p>Use <a href="">this map</a> to see the area. Prices are weeknight/weekend.</p>
+                    <p>Use <a target="_blank" href="./img/map.jpg">this map</a> to see the area. Prices are weeknight/weekend.</p>
 
                     <p class="indent">TAHOE MOUNTAIN RESORTS LODGING: These are really plush, right in the Village with gourmet kitchens, living rooms, fireplaces, full-size washer dryers, underground parking and balconies. Some sleep up to 10. The buildings are: Big Horn, Catamount, Great Bear, Iron Horse and One Village Place (Ignore “Old Greenwood” and “Constellation Residences.”) There is no group rate, but these are still a great deal for 4 or more people; we highly recommend! <a href="http://tinyurl.com/lp2qdlc">See pics here</a> To reserve, call 800.757.7563</p>
                     <ul class="indent">

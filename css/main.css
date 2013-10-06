@@ -31,6 +31,7 @@ img { display: block; width: 202px; height: 202px; opacity: 1; position: absolut
 #content h2 { font-weight: bold; font-family: 'myriad'; font-size: 20px; }
 #content p { margin-bottom: 10px; font-family: 'myriad'; line-height: 19px; }
 #content p.indent { padding-left: 20px; }
+#content p.no-margin { margin-bottom: 0px; }
 #content p span.italics { font-style: italic; }
 #content p a { color: #FFFFFF; text-decoration: underline; }
 #content table { padding-left: 40px; }
