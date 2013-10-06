@@ -39,7 +39,7 @@
                 <div id="schedule">
                     <h2>Welcome Gathering</h2>
                     <p>Thursday 8:30-10:30pm<br />
-                    <p>Please join us at the Alpine Club for some mingling and a brief program about Craig&Bee. Aprés Ski Chic attire. Cash bar available.</p>
+                    Please join us at the Alpine Club for some mingling and a brief program about Craig&Bee. Aprés Ski Chic attire. Cash bar available.</p>
 
                     <br />
                     <br />
