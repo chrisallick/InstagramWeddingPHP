@@ -41,5 +41,5 @@ img { display: block; width: 202px; height: 202px; opacity: 1; position: absolut
 #content ul li a { color: #FFFFFF; text-decoration: underline; }
 
 #gettinghere { color: #FFFFFF; padding: 30px; background: #000000; display: none; overflow-y: scroll; height: 500px; }
-#schedule { color: #FFFFFF; padding: 30px; background: #000000; display: none; }
-#registry { color: #FFFFFF; padding: 30px; background: #000000; display: none; }
+#schedule { color: #FFFFFF; padding: 30px; background: #000000; display: none; overflow-y: scroll; height: 500px; }
+#registry { color: #FFFFFF; padding: 30px; background: #000000; display: none; overflow-y: scroll; height: 500px; }

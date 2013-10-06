@@ -38,7 +38,7 @@
                 </div>
                 <div id="schedule">
                     <h2>Welcome Gathering</h2>
-                    <p>Thursday 8:30-10:30pm</p>
+                    <p>Thursday 8:30-10:30pm<br />
                     <p>Please join us at the Alpine Club for some mingling and a brief program about Craig&Bee. Aprés Ski Chic attire. Cash bar available.</p>
 
                     <br />
@@ -51,18 +51,17 @@
                     <br />
 
                     <h2>The Big Day</h2>
-                    <p>Friday Morning</p>
-                    <p>Friday Morning</p>
-                    <p>Feel free to ski if you like; just don’t be late! The Village has more than one gondola. Make sure you are using the Highlands Gondola, not Big Springs Express! Reaching the Ritz from the Village by gondola will take about 15 minutes.</p>
-                    <p>4:00-4:30 pm</p>
-                    <p>Follow the signs to the Ritz Carlton Living Room to relax and mingle. Have a drink from the bar or warm yourself by the fire until the ceremony begins.
-                    5:45-midnight</p>
-                    <p>We’ll move indoors for cocktail hour, followed by dinner and tons of dancing. The gondola will run until 10:30am</p>
+                    <p>Friday Morning<br />
+                    Feel free to ski if you like; just don’t be late! The Village has more than one gondola. Make sure you are using the Highlands Gondola, not Big Springs Express! Reaching the Ritz from the Village by gondola will take about 15 minutes.</p>
+                    <p>4:00-4:30 pm<br />
+                    Follow the signs to the Ritz Carlton Living Room to relax and mingle. Have a drink from the bar or warm yourself by the fire until the ceremony begins.</p>
+                    <p>5:45-midnight<br />
+                    We’ll move indoors for cocktail hour, followed by dinner and tons of dancing. The gondola will run until 12:30am.</p>
 
                     <br />
                     <br />
 
-                    <h2>A day on the Mountain</h2>
+                    <h2>A Day on the Mountain</h2>
                     <p>Saturday<br />
                     <p>This is a day for us all to spend on the mountain. Skiing, tubing, skating.</p>
                     <p>Planning for this day is still underway. Possibilities include: snow picnic, group tubing, fire and ice party, ice skating.</p>                    
@@ -93,7 +92,7 @@
                     <br />
                     
                     <h2>How Do I Get To And From the Airport?</h2>
-                    <p>Taxis run between Reno Airport and Northstar 24 Hours. One way service is roughly $90 one way for up to 4 people, $10 each additional person.  Try Lakeshore Taxi at 530.544.3600 or Elite Tahoe Taxi at 530.580.8294. Advanced reservations are recommended, especially for groups.</p>
+                    <p>Taxis run between Reno Airport and Northstar 24 Hours. Service is roughly $90 one way for up to 4 people, $10 each additional person.  Try Lakeshore Taxi at 530.544.3600 or Elite Tahoe Taxi at 530.580.8294. Advanced reservations are recommended, especially for groups.</p>
 
                     <p>A more affordable option, especially for singles, is <a href="http://www.northlaketahoeexpress.com/">North Lake Tahoe Express Shuttle</a>. It’s a scheduled shuttle for $45 one way (or less, if you have more people). Advance reservations are required. Call 866.216.5222. Here are the times:</p>
                     <p>Leaving Reno Airport daily at:</p>
@@ -113,7 +112,7 @@
                     </table>
 
                     <p>Leaving Northstar Village for the airport daily at:</p>
-                    <table> 
+                    <table>
                         <tr>
                             <td>4:00am</td>
                             <td>9:15am</td>
@@ -130,15 +129,13 @@
                     <br />
                      
                     <h2>Where Do I Sleep n Stuff?</h2>
-                    <p>We have housing of all kinds, and a group rate for most of it. Don't <span class="italics">delay</span>; things will fill up! We would love to have as many guests as possible in the Village so we’re all together.<p>
+                    <p>We have housing of all kinds, and a group rate for most of it. Don't delay; things will fill up! We would love to have as many guests as possible in the Village so we’re all together.<p>
 
                     <p>The links below will let you see pics, but <span class="italics">please do not reserve online</span>! The system will not always show you all vacancies or allow you to choose the Village. Read carefully below, then call one of the two numbers</p>
 
                     <p>Many options have kitchens, multiple bedrooms and baths,  and livings rooms (some with pull-outs). The best way to save is by buddying up!</p>
 
-                    <p>Use <a href="">this map</a> to see the area. Prices are (weeknight/weekend).</p>
-
-                    <p>Finally, the prices you will see on the website do not reflect our discount. The discounted rates are listed for you below (weeknight/weekend).</p>
+                    <p>Use <a href="">this map</a> to see the area. Prices are weeknight/weekend.</p>
 
                     <p class="indent">TAHOE MOUNTAIN RESORTS LODGING: These are really plush, right in the Village with gourmet kitchens, living rooms, fireplaces, full-size washer dryers, underground parking and balconies. Some sleep up to 10. The buildings are: Big Horn, Catamount, Great Bear, Iron Horse and One Village Place (Ignore “Old Greenwood” and “Constellation Residences.”) There is no group rate, but these are still a great deal for 4 or more people; we highly recommend! <a href="http://tinyurl.com/lp2qdlc">See pics here</a> To reserve, call 800.757.7563</p>
                     <ul>
@@ -173,7 +170,13 @@
                     <br />
                     <br />
 
-                    <h2>Should I Pack Anything Special?</h2>
+                    <h2>Why am I so drunk?</h2>
+                    <p>It’s the altitude. Remember to drink plenty of water and go easy on the sauce. For more information, talk to our Health and Substances Education Specialist, Martha Reynolds.</p>
+
+                    <br />
+                    <br />
+
+                    <h2>Should I pack anything special?</h2>
                     <p>Yes! Bring snow gear, skis, boards, mittens and a reindeer sleigh. Also a bathing suit for the hot tub. The ceremony will be outside, so please bundle up! The wedding itself is a formal affair, in a suits-not-tuxes kind of way.</p>
 
                     <br />
