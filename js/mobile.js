@@ -6,61 +6,56 @@ $(document).ready(function() {
 	*/
     instagram = new Instagram( pics_cache, $("#photos") );
 	instagram.load(function() {
-		if( !faded ) {
-			$("#hashtag").mousemove(function() {
-				clearTimeout( ft );
-				runFade();
-			});
-		}
-		ft = setTimeout( runFade, 5000 );
+		// if( !faded ) {
+		// 	$("#hashtag").mousemove(function() {
+		// 		clearTimeout( ft );
+		// 		runFade();
+		// 	});
+		// }
+		// ft = setTimeout( runFade, 5000 );
 	});
 
 	$("#nav .gettinghere").click(function(event){
 		event.preventDefault();
-		$("#registry").hide().removeClass("open");
-		$("#schedule").hide().removeClass("open");
-		if( $("#gettinghere").hasClass("open") ) {
-			$("#gettinghere").slideUp(function(){
-				$("#content").hide();
-			}).removeClass("open");
-		} else {
-			$("#content").show();
-			$("#gettinghere").slideDown().addClass("open");
-		}
+
+		$("content").hide();
+
+		$("#registry").hide();
+		$("#schedule").hide();
+		$("#gettinghere").show();
+
+		$("#content").show();
+		$("#close").show();
 	});
 
 	$("#nav .schedule").click(function(event){
 		event.preventDefault();
-		$("#registry").hide().removeClass("open");
-		$("#gettinghere").hide().removeClass("open");
-		if( $("#schedule").hasClass("open") ) {
-			$("#schedule").slideUp(function(){
-				$("#content").hide();
-			}).removeClass("open");
-		} else {
-			$("#content").show();
-			$("#schedule").slideDown().addClass("open");
-		}
+		
+		$("content").hide();
+
+		$("#registry").hide();
+		$("#schedule").show();
+		$("#gettinghere").hide();
+
+		$("#content").show();
+		$("#close").show();
 	});
 
 	$("#nav .registry").click(function(event){
 		event.preventDefault();
-		$("#gettinghere").hide().removeClass("open");
-		$("#schedule").hide().removeClass("open");
-		if( $("#registry").hasClass("open") ) {
-			$("#registry").slideUp(function(){
-				$("#content").hide();
-			}).removeClass("open");
-		} else {
-			$("#content").show();
-			$("#registry").slideDown().addClass("open");
-		}
+		
+		$("content").hide();
+
+		$("#registry").show();
+		$("#schedule").hide();
+		$("#gettinghere").hide();
+
+		$("#content").show();
+		$("#close").show();
 	});
 
-	$(".close").click(function(){
-		$("#gettinghere").hide().removeClass("open");
-		$("#schedule").hide().removeClass("open");
-		$("#registry").hide().removeClass("open");
+	$("#close").click(function(){
+		$(this).hide();
 		$("#content").hide();
 	});
 });
