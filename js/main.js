@@ -72,7 +72,7 @@ $(document).ready(function() {
 			}).removeClass("open");
 		} else {
 			$("#content").show();
-			$("#gettinghere").slideDown().addClass("open");
+			$("#gettinghere").slideDown('fast').addClass("open");
 		}
 	});
 
@@ -86,7 +86,7 @@ $(document).ready(function() {
 			}).removeClass("open");
 		} else {
 			$("#content").show();
-			$("#schedule").slideDown().addClass("open");
+			$("#schedule").slideDown('fast').addClass("open");
 		}
 	});
 
@@ -100,7 +100,7 @@ $(document).ready(function() {
 			}).removeClass("open");
 		} else {
 			$("#content").show();
-			$("#registry").slideDown().addClass("open");
+			$("#registry").slideDown('fast').addClass("open");
 		}
 	});
 
