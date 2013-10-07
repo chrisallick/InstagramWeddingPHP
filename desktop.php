@@ -31,8 +31,8 @@
             <div id="hashtag">
                 <img src="./img/hashtag.png" />
             </div>
+            <div id="close">x</div>
             <div id="content">
-                <div id="close">x</div>
                 <div id="registry">
                     <p>Of course no gifts are necessary; we’re thankful you can share our day with us! We live in a small apartment in San Francisco with almost everything we need. We have registered for a <a href="http://www.honeyfund.com/wedding/craigandbee">few things here</a>, but flat gifts in envelopes are also greatly appreciated.</p>
                 </div>
