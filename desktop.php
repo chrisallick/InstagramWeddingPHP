@@ -185,7 +185,7 @@
                     <br />
 
                     <h2>Will we be bombing and shredding?</h2>
-                    <p>Yes! We hope everyone will get out on the mountain as much as possible. We’ll have group rate tickets, but we have to purchase ahead; watch for an email from Bee.</p>
+                    <p>Yes! We hope everyone will get out on the mountain as much as possible. We’ll have group rate tickets, but we have to purchase ahead. If you are interested, please contact the Maid of Honor, Sara Petruska, at sarapetruska@yahoo.com before January 15th.</p>
 
                     <br />
                     <br />
