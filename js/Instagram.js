@@ -1,4 +1,4 @@
-Instagram = function( _pics, _el, _mobile ) {
+Instagram = function( _pics, _el ) {
 	self = this;
 	this.pics = _pics;
 	this.images = [];
@@ -7,7 +7,6 @@ Instagram = function( _pics, _el, _mobile ) {
 	this.currentNextImage = 0;
 
 	this.photos = _el;
-	this.mobile = _mobile;
 	this.resizing = false;
 	this.loaded = 0;
 	this.lastAnimated = 0;
@@ -19,7 +18,7 @@ Instagram = function( _pics, _el, _mobile ) {
 	this.load = function( _onLoad ) {
 		self.onLoad = _onLoad;
 		self.rows = Math.ceil($("#wrapper").width()/200);
-		self.cols = Math.ceil($(window).height()/200);
+		self.cols = Math.ceil($(document).height()/200);
 		self.visible = (self.rows * self.cols) + 3;
 		
 		console.log( self.rows, self.cols, self.visible, self.pics.length );
@@ -144,7 +143,8 @@ Instagram = function( _pics, _el, _mobile ) {
 			$(el).animate({ top: '200px' }, 2000, 'easeInOutBack');
 			$(next).animate({ top: '0px' }, 2000, 'easeInOutBack');
 		 	break;
-		}
+		 }
+
 
 		setTimeout(function(){
 			$(el).remove();

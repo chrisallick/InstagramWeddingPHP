@@ -32,7 +32,7 @@ fetchMorePhotos = function() {
 runFade = function() {
 	faded = true;
 	clearTimeout( fade_timer );
-	$("#hashtag").fadeOut('slow', function() {
+	$("#hashtag, #overlay").fadeOut('slow', function() {
 		$("#nav").fadeIn();
 	});
 }
@@ -44,9 +44,7 @@ $(document).ready(function() {
 	$("#hashtag").css({
 		top: $(document).height()/2 - $("#hashtag").height()/2,
 		left: $(document).width()/2 - $("#hashtag").width()/2
-	}).animate({
-		opacity: 1
-	});
+	}).fadeIn();
 
 	$(window).resize(function(){
 		$("#hashtag").css({
@@ -106,7 +104,7 @@ $(document).ready(function() {
     instagram = new Instagram( shuffle(pics), $("#photos") );
 	instagram.load(function() {
 		if( !faded ) {
-			$("#hashtag").mousemove(function() {
+			$(document).mousemove(function() {
 				clearTimeout( fade_timer );
 				runFade();
 			});
