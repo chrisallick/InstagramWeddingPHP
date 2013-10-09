@@ -26,7 +26,7 @@ fetchMorePhotos = function() {
 	    }
 	});
 
-	console.log( "run fetch timer again..." );
+	fetch_timer = setTimeout( fetchMorePhotos, 10000 );
 }
 
 runFade = function() {
@@ -38,7 +38,7 @@ runFade = function() {
 		});
 	});
 
-	fetch_timer = setTimeout( fetchMorePhotos, 5000 );
+	fetch_timer = setTimeout( fetchMorePhotos, 10000 );
 }
 
 var instagram, faded = false, fade_timer, fetch_timer;
