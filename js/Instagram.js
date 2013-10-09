@@ -4,6 +4,8 @@ Instagram = function( _pics, _el, _mobile ) {
 	this.images = [];
 	this.new_images = [];
 
+	this.currentNextImage = 0;
+
 	this.photos = _el;
 	this.mobile = _mobile;
 	this.resizing = false;
@@ -52,10 +54,11 @@ Instagram = function( _pics, _el, _mobile ) {
 			}
 			img.src = self.pics[i];
 		}
-		
+
 		setTimeout( function(){ self.animate(); }, 1000);
 
 		for( var j = i, len = self.pics.length-1; j < len; j++ ) {
+		//for( var j = 78, len = self.pics.length-1; j < len; j++ ) {
 			var img = new Image();
 			img.onload = function() {
 				this.className = "photo";
@@ -107,7 +110,13 @@ Instagram = function( _pics, _el, _mobile ) {
 			self.images.push(new_image);
 		} else {
 			console.log("out of new images");
-			img = getRandomInt( 0, self.images.length-1 );
+			//img = getRandomInt( 0, self.images.length-1 );
+			img = self.currentNextImage;
+			self.currentNextImage++;
+			//console.log( self.currentNextImage, self.images.length );
+			if( self.currentNextImage == self.images.length-1 ) {
+				self.currentNextImage = 0;
+			}
 			next = self.images[img].cloneNode();
 		}
 

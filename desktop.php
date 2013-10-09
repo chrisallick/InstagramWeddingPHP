@@ -18,6 +18,7 @@
         <script src='./js/plugins.js' type='text/javascript'></script>
     </head>
     <body>
+        <div id="hashtag"></div>
         <div id="wrapper">
             <div id="photos" class="clear">
                 
@@ -29,9 +30,7 @@
                     <li class="last"><a class="gettinghere" href="#">getting ready</a></li>
                 </ul>
             </div>
-            <div id="hashtag">
-                <img src="./img/hashtag.png" />
-            </div>
+            
             <div id="content">
                 <div id="registry">
                     <h1>registry</h1>

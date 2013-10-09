@@ -26,7 +26,7 @@ fetchMorePhotos = function() {
 	    }
 	});
 
-	fetch_timer = setTimeout( fetchMorePhotos, 10000 );
+	fetch_timer = setTimeout( fetchMorePhotos, 30000 );
 }
 
 runFade = function() {
@@ -39,19 +39,19 @@ runFade = function() {
 
 var instagram, faded = false, fade_timer, fetch_timer;
 $(document).ready(function() {
-	fetch_timer = setTimeout( fetchMorePhotos, 10000 );
+	fetch_timer = setTimeout( fetchMorePhotos, 30000 );
 	
-	$("#hashtag img").css({
-		top: $(document).height()/2 - ($("#hashtag img").height())/2,
-		left: $(document).width()/2 - ($("#hashtag img").width())/2
+	$("#hashtag").css({
+		top: $(document).height()/2 - $("#hashtag").height()/2,
+		left: $(document).width()/2 - $("#hashtag").width()/2
 	}).animate({
 		opacity: 1
 	});
 
 	$(window).resize(function(){
-		$("#hashtag img").css({
-			top: $(document).height()/2 - ($("#hashtag img").height()+60)/2,
-			left: $(document).width()/2 - ($("#hashtag img").width()+60)/2
+		$("#hashtag").css({
+			top: $(document).height()/2 - ($("#hashtag").height()+60)/2,
+			left: $(document).width()/2 - ($("#hashtag").width()+60)/2
 		});
 	});
 

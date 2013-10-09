@@ -33,8 +33,7 @@ html, body { width: 100%; height: 100%; background-color: rgba(0,0,0,.85); overf
 /*
 	hash tag
 */
-#hashtag { width: 100%; height: 100%; position: absolute; z-index: 1000; top: 0px; left: 0px; background-color: rgba( 0, 0, 0, .8); }
-#hashtag img { display: block; width: 1297px; height: 123px; position: absolute; top: 0px; left: 0px; }
+#hashtag { width: 1297px; height: 123px; position: absolute; z-index: 1000; top: 0px; left: 0px; background-color: rgba( 0, 0, 0, .8); background: url("../img/hashtag.png") top left no-repeat; background-size: 100% 100%; }
 
 /*
 	content drop downs
