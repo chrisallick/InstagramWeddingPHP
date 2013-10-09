@@ -139,7 +139,8 @@ Instagram = function( _pics, _el, _mobile ) {
 
 		setTimeout(function(){
 			$(el).remove();
-			setTimeout( function(){ self.animate(); }, getRandomArbitary( 500, 2000 ));
+			//setTimeout( function(){ self.animate(); }, getRandomArbitary( 500, 2000 ));
+			setTimeout( function(){ self.animate(); }, getRandomArbitary( 500 ));
 		}, 2250);
 	}
 }
