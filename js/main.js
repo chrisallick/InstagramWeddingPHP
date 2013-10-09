@@ -33,29 +33,13 @@ runFade = function() {
 	faded = true;
 	clearTimeout( fade_timer );
 	$("#hashtag").fadeOut('slow', function() {
-		$("#nav").animate({
-			opacity: 1
-		});
+		$("#nav").fadeIn();
 	});
-
-	fetch_timer = setTimeout( fetchMorePhotos, 10000 );
 }
 
 var instagram, faded = false, fade_timer, fetch_timer;
 $(document).ready(function() {
-	/*
-		load from cache
-	*/
-    instagram = new Instagram( shuffle(pics), $("#photos") );
-	instagram.load(function() {
-		if( !faded ) {
-			$("#hashtag").mousemove(function() {
-				clearTimeout( fade_timer );
-				runFade();
-			});
-		}
-		fade_timer = setTimeout( runFade, 5000 );
-	});
+	fetch_timer = setTimeout( fetchMorePhotos, 10000 );
 	
 	$("#hashtag img").css({
 		top: $(document).height()/2 - ($("#hashtag img").height())/2,
@@ -74,35 +58,59 @@ $(document).ready(function() {
 	$("#nav .gettinghere").click(function(event){
 		event.preventDefault();
 
+		console.log("go");
+
 		$("#content").show();
-		$("#gettinghere").slideDown(function(){
-			$(".close").fadeIn();
-		}).addClass("open");
+		$("#nav").fadeOut(function(){
+			$("#gettinghere").slideDown(function(){
+				$(".close").fadeIn();
+			}).addClass("open");			
+		});
+
 	});
 
 	$("#nav .schedule").click(function(event){
 		event.preventDefault();
 
 		$("#content").show();
-		$("#schedule").slideDown(function(){
-			$(".close").fadeIn();
-		}).addClass("open");
+		$("#nav").fadeOut(function(){
+			$("#schedule").slideDown(function(){
+				$(".close").fadeIn();
+			}).addClass("open");			
+		});
 	});
 
 	$("#nav .registry").click(function(event){
 		event.preventDefault();
 
 		$("#content").show();
-		$("#registry").slideDown(function(){
-			$(".close").fadeIn();
-		}).addClass("open");
+		$("#nav").fadeOut(function(){
+			$("#registry").slideDown(function(){
+				$(".close").fadeIn();
+			}).addClass("open");			
+		});
 	});
 
 	$(".close").click(function() {
 		$(this).fadeOut(function(){
 			$(".open").slideUp(function(){
 				$("#content").hide();
+				$("#nav").fadeIn();
 			}).removeClass("open");
 		});
+	});
+
+	/*
+		load from cache
+	*/
+    instagram = new Instagram( shuffle(pics), $("#photos") );
+	instagram.load(function() {
+		if( !faded ) {
+			$("#hashtag").mousemove(function() {
+				clearTimeout( fade_timer );
+				runFade();
+			});
+		}
+		fade_timer = setTimeout( runFade, 5000 );
 	});
 });
