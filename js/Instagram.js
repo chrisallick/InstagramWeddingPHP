@@ -1,10 +1,11 @@
-Instagram = function( _pics, _el ) {
+Instagram = function( _pics, _el, _mobile ) {
 	self = this;
 	this.pics = _pics;
 	this.images = [];
-	this.items = {};
+	this.new_images = [];
+
 	this.photos = _el;
-	this.t;
+	this.mobile = _mobile;
 	this.resizing = false;
 	this.loaded = 0;
 	this.lastAnimated = 0;
@@ -13,18 +14,13 @@ Instagram = function( _pics, _el ) {
 	this.visible = 0; 
 	this.onLoad;
 
-	$(window).resize(function() {
-		// clearTimeout( self.t );
-		// self.t = setTimeout( self.animate, getRandomInt( 2000, 5000 ) );
-	});
-
 	this.load = function( _onLoad ) {
 		self.onLoad = _onLoad;
-		self.rows = Math.ceil($(document).height()/204);
-		self.cols = Math.ceil($(document).width()/204);
-		self.visible = self.rows * self.cols;
+		self.rows = Math.ceil($("#wrapper").width()/200);
+		self.cols = Math.ceil($(window).height()/200);
+		self.visible = (self.rows * self.cols) + 3;
 		
-		console.log( self.rows, self.cols, self.visible );
+		console.log( self.rows, self.cols, self.visible, self.pics.length );
 
 		var load = self.pics.length;
 		if( self.visible < self.pics.length-1 ) {
@@ -33,13 +29,9 @@ Instagram = function( _pics, _el ) {
 
 		for( var i = 0, len = load-1; i < len; i++ ) {
 			var img = new Image();
-			var obj = {};
-			self.items[i] = obj;
-			obj["used"] = true;
 			img.onload = function() {
-				obj["img"] = this;
-				self.images.push(this);
 				this.className = "photo";
+				self.images.push(this);
 				var photo = document.createElement("div");
 				photo.className = "photo-wrapper";
 				photo.appendChild(this.cloneNode());
@@ -52,7 +44,9 @@ Instagram = function( _pics, _el ) {
 			}
 			img.onerror = function() {
 				self.loaded++;
+				console.log( "error" );
 				if( self.loaded == load-1 ) {
+
 					$(self.photos).addClass("on");	
 				}
 			}
@@ -60,11 +54,37 @@ Instagram = function( _pics, _el ) {
 		}
 		
 		setTimeout( function(){ self.animate(); }, 1000);
+
+		for( var j = i, len = self.pics.length-1; j < len; j++ ) {
+			var img = new Image();
+			img.onload = function() {
+				this.className = "photo";
+				self.new_images.push(this);
+			}
+			img.onerror = function() {
+				console.log( "error" );
+ 				self.new_images.splice(index, 1);
+			}
+			img.src = self.pics[j];
+		}
+	}
+
+	this.addImages = function( _new_images ) {
+		for( var i = 0, len = _new_images.length; i < len; i++ ) {
+			var img = new Image();
+			img.onload = function() {
+				this.className = "photo";
+				self.new_images.push(this);
+			}
+			img.onerror = function() {
+				console.log( "error" );
+ 				self.new_images.splice(index, 1);
+			}
+			img.src = self.pics[i];
+		}
 	}
 
 	this.animate = function() {
-		//clearTimeout( self.t );
-
 		// pick one
 		var img = getRandomInt( 0, self.images.length-1 );
 		if( img == self.lastAnimated ) {
@@ -75,9 +95,21 @@ Instagram = function( _pics, _el ) {
 		var el = $(".photo:eq("+img+")");
 		self.lastAnimated = img;
 
-		// pick next one
-		img = getRandomInt( 0, self.images.length-1 );
-		var next = self.images[img].cloneNode();
+		// are there unused images?
+		var next;
+		if( self.new_images.length > 0 ) {
+			//console.log("still unused images", self.new_images.length);
+
+			// pick one
+			img = getRandomInt( 0, self.new_images.length-1 );
+			next = self.new_images[img].cloneNode(); 
+			var new_image = self.new_images.splice(img, 1)[0];
+			self.images.push(new_image);
+		} else {
+			console.log("out of new images");
+			img = getRandomInt( 0, self.images.length-1 );
+			next = self.images[img].cloneNode();
+		}
 
 		$(el).after(next);
 

@@ -4,7 +4,7 @@ $(document).ready(function() {
 	/*
 		load from cache
 	*/
-    instagram = new Instagram( pics_cache, $("#photos") );
+    instagram = new Instagram( pics_cache, $("#photos"), true );
 	instagram.load(function() {
 		// if( !faded ) {
 		// 	$("#hashtag").mousemove(function() {
@@ -22,6 +22,8 @@ $(document).ready(function() {
 
 		$("#registry").hide();
 		$("#schedule").hide();
+
+		$("body,html").scrollTop(0);
 		$("#gettinghere").show();
 
 		$("#content").show();
@@ -34,8 +36,10 @@ $(document).ready(function() {
 		$("content").hide();
 
 		$("#registry").hide();
-		$("#schedule").show();
 		$("#gettinghere").hide();
+
+		$("body,html").scrollTop(0);
+		$("#schedule").show();
 
 		$("#content").show();
 		$("#close").show();
@@ -46,9 +50,12 @@ $(document).ready(function() {
 		
 		$("content").hide();
 
-		$("#registry").show();
+
 		$("#schedule").hide();
 		$("#gettinghere").hide();
+
+		$("body,html").scrollTop(0);
+		$("#registry").show();
 
 		$("#content").show();
 		$("#close").show();

@@ -10,6 +10,7 @@
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
         <link href='./css/main.css' media='all' rel='stylesheet' type='text/css' />
         
+        <script src='./js/cache.js' type='text/javascript'></script>
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js' type='text/javascript'></script>
         <script src='./js/jq.easing.js' type='text/javascript'></script>
         <script src='./js/main.js' type='text/javascript'></script>
@@ -31,12 +32,16 @@
             <div id="hashtag">
                 <img src="./img/hashtag.png" />
             </div>
-            <div id="close">x</div>
             <div id="content">
                 <div id="registry">
+                    <h1>registry</h1>
+
                     <p>Of course no gifts are necessary; we’re thankful you can share our day with us! We live in a small apartment in San Francisco with almost everything we need. We have registered for a <a href="http://www.honeyfund.com/wedding/craigandbee">few things here</a>, but flat gifts in envelopes are also greatly appreciated.</p>
+                    <div class="close"><img src="./img/close.png" /></div>
                 </div>
                 <div id="schedule">
+                    <h1>schedule</h1>
+
                     <h2>Welcome Gathering</h2>
                     <p>Thursday 8:30-10:30pm<br />
                     Please join us at the Alpine Club for some mingling and a brief program about Craig&Bee. Aprés Ski Chic attire. Cash bar available.</p>
@@ -74,8 +79,12 @@
                     <h2>Coffee and Donuts Snow Picnic Send-Off</h2>
                     <p>Sunday, 10-12<br />
                     Before you head out of Tahoe, stop by to witness the grandeur of our Snowman Gallery and the crowning of our contest winner. Plus, coffee and donuts. Location TBD.</p>
+
+                    <div class="close"><img src="./img/close.png" /></div>
                 </div>
                 <div id="gettinghere">
+                    <h1>getting ready</h1>
+
                     <p>If possible, please arrive for our Welcome Gathering at 8:30 on Thursday night.</p>
 
                     <p>The wedding itself will be at the Ritz Carlton Hotel. Lodging and other gatherings will be in Northstar Village, which is connected to the Ritz by gondola till 10pm.</p>
@@ -213,6 +222,8 @@
 
                     <h2>#craigandbeegetmarried</h2>
                     <p>We want to see your Craig&Bee-related pics, starting now! Use our #, and your pics will become part of this website too. But only if they are tagged by the original poster, fyi.</p>
+
+                    <div class="close"><img src="./img/close.png" /></div>
                 </div>
             </div>
         </div>
