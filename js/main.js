@@ -84,8 +84,8 @@ $(document).ready(function() {
 		$("#content").show();
 		$("#nav").fadeOut(function(){
 			$("#registry").slideDown(function(){
-				$(".close").fadeIn();
-			}).addClass("open");			
+				$(".close", this).fadeIn();
+			}).addClass("open");		
 		});
 	});
 
@@ -103,12 +103,12 @@ $(document).ready(function() {
 	*/
     instagram = new Instagram( shuffle(pics), $("#photos") );
 	instagram.load(function() {
-		if( !faded ) {
-			$(document).mousemove(function() {
+		$(document).mousemove(function() {
+			if( !faded ) {
 				clearTimeout( fade_timer );
 				runFade();
-			});
-		}
+			}
+		});
 		fade_timer = setTimeout( runFade, 5000 );
 	});
 });
