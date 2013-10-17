@@ -36,14 +36,15 @@
                     <h1>registry</h1>
 
                     <p>Of course no gifts are necessary; we’re thankful you can share our day with us! We live in a small apartment in San Francisco with almost everything we need. We have registered for a <a href="http://www.honeyfund.com/wedding/craigandbee">few things here</a>, but flat gifts in envelopes are also greatly appreciated.</p>
-                    <div class="close"><img src="./img/close.png" /></div>
+                    <div class="close-arrow"><img src="./img/close.png" /></div>
+                    <div class="close-x">x</div>
                 </div>
                 <div id="schedule">
                     <h1>schedule</h1>
 
                     <h2>Welcome Gathering</h2>
                     <p>Thursday 8:30-10:30pm<br />
-                    Please join us at the Alpine Club for some mingling and a brief program about Craig&Bee. Aprés Ski Chic attire. Cash bar available.</p>
+                    Please join us at the Alpine Club for some mingling. Aprés Ski Chic attire. Cash bar available.</p>
 
                     <br />
                     <br />
@@ -76,10 +77,11 @@
                     <br />
 
                     <h2>Coffee and Donuts Snow Picnic Send-Off</h2>
-                    <p>Sunday, 10-12<br />
+                    <p>Sunday, time TBD<br />
                     Before you head out of Tahoe, stop by to witness the grandeur of our Snowman Gallery and the crowning of our contest winner. Plus, coffee and donuts. Location TBD.</p>
 
-                    <div class="close"><img src="./img/close.png" /></div>
+                    <div class="close-arrow"><img src="./img/close.png" /></div>
+                    <div class="close-x">x</div>
                 </div>
                 <div id="gettinghere">
                     <h1>getting ready</h1>
@@ -147,7 +149,7 @@
 
                     <p>Use <a target="_blank" href="./img/map.jpg">this map</a> to see the area. Prices are weeknight/weekend.</p>
 
-                    <p class="indent">TAHOE MOUNTAIN RESORTS LODGING: These are really plush, right in the Village with gourmet kitchens, living rooms, fireplaces, full-size washer dryers, underground parking and balconies. Some sleep up to 10. The buildings are: Big Horn, Catamount, Great Bear, Iron Horse and One Village Place (Ignore “Old Greenwood” and “Constellation Residences.”) There is no group rate, but these are still a great deal for 4 or more people; we highly recommend! <a href="http://tinyurl.com/lp2qdlc">See pics here</a> To reserve, call 800.757.7563</p>
+                    <p class="indent">TAHOE MOUNTAIN RESORTS LODGING: These are really plush, right in the Village with gourmet kitchens, living rooms, fireplaces, full-size washer dryers, underground parking and balconies. Some sleep up to 10. The buildings are: Big Horn, Catamount, Great Bear, Iron Horse and One Village Place (Ignore “Old Greenwood” and “Constellation Residences.”) There is no group rate, but these are still a great deal for 4 or more people; we highly recommend! <a href="http://tinyurl.com/lp2qdlc">See pics here</a> To reserve, call 866.241.1524</p>
                     <ul class="indent">
                         <li>1 bedroom $349/$479</li>
                         <li>2 bedroom $479/$689</li>
@@ -220,9 +222,10 @@
                     <br />
 
                     <h2>#craigandbeegetmarried</h2>
-                    <p>We want to see your Craig&Bee-related pics, starting now! Use our #, and your pics will become part of this website too. But only if they are tagged by the original poster, fyi.</p>
+                    <p>We want to see your Craig&Bee-related pics, starting now! Tag your pics, and they will automatically appear on our site, but only if your account is public.</p>
 
-                    <div class="close"><img src="./img/close.png" /></div>
+                    <div class="close close-arrow"><img src="./img/close.png" /></div>
+                    <div class="close close-x">x</div>
                 </div>
             </div>
         </div>

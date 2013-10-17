@@ -50,14 +50,15 @@ html, body { width: 100%; height: 100%; background-color: rgba(0,0,0,.85); overf
 #content td { width: 100px; font-family: 'myriad'; }
 #content td.indent { padding-left: 40px; }
 
-#content .close { position: absolute; bottom: 15px; left: 461px; width: 75px; height: 26px; color: #FFFFFF; font-family: 'myriad'; border: 0px solid white; cursor: pointer; display: none; }
-#content .close img { display: block; width: 100%; height: 100%; }
+#content .close-arrow { border: 1px solid #D1D2D4; border-width: 1px 0px 0px 0px; position: absolute; bottom: 0px; left: 0px; width: 100%; height: 40px; color: #FFFFFF; font-family: 'myriad'; cursor: pointer; display: none; background: #000000; }
+#content .close-arrow img { display: block; width: 75px; height: 26px; position: absolute; top: 5px; left: 461px; }
+#content .close-x { cursor: pointer; position: absolute; top: 6px; right: 30px; z-index: 1000; font-size: 30px; font-family: 'myriad'; display: none; }
 
 #content ul { list-style-type: disc; margin-bottom: 10px; padding-left: 80px; }
 #content ul li { font-family: 'myriad'; }
 #content ul li { padding-left: 10px; margin-bottom: 6px; }
 #content ul li a { color: #FFFFFF; text-decoration: underline; }
 
-#gettinghere { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; height: 100%; padding: 60px 30px 30px 30px; background: rgba(0,0,0,.85); display: none; overflow-y: scroll; }
-#schedule { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; height: 100%; padding: 60px 30px 30px 30px; background: rgba(0,0,0,.85); display: none; overflow-y: scroll; }
-#registry { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; height: 100%; padding: 60px 30px 30px 30px; background: rgba(0,0,0,.85); display: none; overflow-y: scroll; }
+#gettinghere { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; height: 100%; padding: 60px 30px 60px 30px; background: rgba(0,0,0,.85); display: none; overflow-y: scroll; }
+#schedule { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; height: 100%; padding: 60px 30px 60px 30px; background: rgba(0,0,0,.85); display: none; overflow-y: scroll; }
+#registry { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; height: 100%; padding: 60px 30px 60px 30px; background: rgba(0,0,0,.85); display: none; overflow-y: scroll; }

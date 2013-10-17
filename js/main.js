@@ -61,7 +61,8 @@ $(document).ready(function() {
 		$("#content").show();
 		$("#nav").fadeOut(function(){
 			$("#gettinghere").slideDown(function(){
-				$(".close").fadeIn();
+				$(".close-arrow").fadeIn();
+				$(".close-x", this).fadeIn();
 			}).addClass("open");			
 		});
 
@@ -73,7 +74,8 @@ $(document).ready(function() {
 		$("#content").show();
 		$("#nav").fadeOut(function(){
 			$("#schedule").slideDown(function(){
-				$(".close").fadeIn();
+				$(".close-arrow").fadeIn();
+				$(".close-x", this).fadeIn();
 			}).addClass("open");			
 		});
 	});
@@ -84,12 +86,24 @@ $(document).ready(function() {
 		$("#content").show();
 		$("#nav").fadeOut(function(){
 			$("#registry").slideDown(function(){
-				$(".close", this).fadeIn();
+				$(".close-arrow", this).fadeIn();
+				$(".close-x", this).fadeIn();
 			}).addClass("open");		
 		});
 	});
 
-	$(".close").click(function() {
+	$(".close-arrow").click(function() {
+		$(".close-x").fadeOut();
+		$(this).fadeOut(function(){
+			$(".open").slideUp(function(){
+				$("#content").hide();
+				$("#nav").fadeIn();
+			}).removeClass("open");
+		});
+	});
+
+	$(".close-x").click(function() {
+		$(".close-arrow").fadeOut();
 		$(this).fadeOut(function(){
 			$(".open").slideUp(function(){
 				$("#content").hide();
