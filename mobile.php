@@ -157,7 +157,7 @@
                         <li>Aspen Grove studios: queen or queen Murphy bed (ask to be in walking distance of the Village), $175/$196</li>
                     </ul>
 
-                    <p class="indent">OUTSIDE THE VILLAGE: Once more, we don't recommend staying outside the village. If you are staying in Gold Bend, Indian Hills or lower Aspen Grove, you will need the shuttle. <a href="http://www.northstarcalifornia.com/info/ski/trip-planning/northstar-mountain-condominiums.asp">Pics here</a>; prices below.</p>
+                    <p class="indent">OUTSIDE THE VILLAGE: Once more, we don't recommend staying outside the village unless you have a car. If you are staying in Gold Bend, Indian Hills or lower Aspen Grove, you will need the shuttle. <a href="http://www.northstarcalifornia.com/info/ski/trip-planning/northstar-mountain-condominiums.asp">Pics here</a>; prices below.</p>
                     <ul class="indent">
                         <li>2 BR, 1 Bath Condos, $294/$315</li>
                         <li>2 BR, 2 Bath Condos , $315/$343</li>
