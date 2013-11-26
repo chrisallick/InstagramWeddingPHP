@@ -39,7 +39,7 @@ runFade = function() {
 
 var instagram, faded = false, fade_timer, fetch_timer;
 $(document).ready(function() {
-	fetch_timer = setTimeout( fetchMorePhotos, 30000 );
+	//fetch_timer = setTimeout( fetchMorePhotos, 30000 );
 	
 	$("#hashtag").css({
 		top: $(document).height()/2 - $("#hashtag").height()/2,
