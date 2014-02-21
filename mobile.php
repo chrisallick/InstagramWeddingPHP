@@ -38,23 +38,17 @@
                     <h1>schedule</h1>
 
                     <h2>Welcome Gathering</h2>
-                    <p>Thursday 8:30-10:30pm<br />
-                    Please join us at the Alpine Club for some mingling. Aprés Ski Chic attire. Cash bar available.</p>
-
-                    <br />
-                    <br />
-
-                    <h2>On-Going Snowman Building Contest</h2>
-                    <p>Stop by anytime to add a snowman to our contest gallery! Final judging will occur Sunday morning during the coffee and donuts send-off, with surprise guest judge.  Kids and adults welcome. Location TBD.</p>
+                    <p>Thursday 8:15-10pm<br />
+                    Please join us at the Alpine Club for some mingling, apps and drinks, hosted by Georgette and Peter Melchiano. Aprés Ski Chic attire (no pressure).</p>
 
                     <br />
                     <br />
 
                     <h2>The Big Day</h2>
                     <p>Friday Morning<br />
-                    Feel free to ski if you like; just don’t be late! The Village has more than one gondola. Make sure you are using the Highlands Gondola, not Big Springs Express! Reaching the Ritz from the Village by gondola will take about 15 minutes.</p>
+                    Feel free to ski if you like; just don’t be late! Plan to leave for the ceremony at around 3:40. It will take you 15-20 minutes to walk to the Highlands Gondola. The ride itself takes 8 minutes, with a little more walking at the top. Be aware: there is more than one gondola! You want the Highlands Gondola, not Big Springs.</p>
                     <p>4:00-4:30 pm<br />
-                    Follow the signs to the Ritz Carlton Living Room to relax and mingle. Have a drink from the bar or warm yourself by the fire until the ceremony begins.</p>
+                    Follow signs to the Ritz Carlton Living Room to relax and mingle. Have a drink from the bar or warm yourself by the fire until the ceremony begins at 4:30.</p>
                     <p>5:45-midnight<br />
                     We’ll move indoors for cocktail hour, followed by dinner and tons of dancing. The gondola will run until 12:30am.</p>
 
@@ -63,17 +57,22 @@
 
                     <h2>A Day on the Mountain</h2>
                     <p>Saturday<br />
-                    This is a day for us all to spend on the mountain.<br />
-                    Planning for this day is still underway. Possibilities include: snow picnic or ice skating.</p>                    
-                    <p>Saturday Evening<br />
-                    If there is a plan, we’ll post it here!</p>
+                    This is a day for us all to spend on the mountain. Skiers and boarders are free to carve pow pow all day.<br />
+                    <p>2:30 PM Skate Party<br />
+                    Join champion pairs figure skating team (not really) Nancy Strange and Armando Flores at the village rink for an informal afternoon skate. practice your triple lutz, or just have a spiked hot chocolate by the fire. Look for our skate party hosts in their charming snowflake crowns.</p>
+                    <p>Northstar Lodging includes free rink admission and 2 skate rentals. Look for vouchers in your check-in packet!</p>                
+                    <p>Saturday Karaoke Talent and Charisma Showcase<br />
+                    Ed and Martha Reynolds invite you to Mikunis Restaurant in the village for snacks and karaoke. The space opens at 8; karaoke kicks in around 9:30. High-difficulty songs, excessive showmanship and interpretive dance are encouraged. Feel free to come and go throughout the evening. Cash bar available.</p>
 
                     <br />
                     <br />
 
-                    <h2>Coffee and Donuts Snow Picnic Send-Off</h2>
+                    <h2>Fond Farewell</h2>
                     <p>Sunday, time TBD<br />
-                    Before you head out of Tahoe, stop by to witness the grandeur of our Snowman Gallery and the crowning of our contest winner. Plus, coffee and donuts. Location TBD.</p>
+                    Craig and Bee have some bombing and shredding to get to, but we'll be having coffee at the rink from 9-10 am. Swing by to say hello or goodbye!</p>
+
+                    <div class="close-arrow"><img src="./img/close.png" /></div>
+                    <div class="close-x">x</div>
                 </div>
                 <div id="gettinghere">
                     <h1>getting ready</h1>
@@ -94,7 +93,7 @@
                     <br />
                     
                     <h2>How Do I Get To And From the Airport?</h2>
-                    <p>Taxis run between Reno Airport and Northstar 24 Hours. Service is roughly $90 one way for up to 4 people, $10 each additional person.  Try Lakeshore Taxi at 530.544.3600 or Elite Tahoe Taxi at 530.580.8294. Advanced reservations are recommended, especially for groups.</p>
+                    <p>Taxis run between Reno Airport and Northstar 24 Hours. Service is roughly $90 one way for up to 4 people, $10 each additional person.  Try Lakeshore Taxi at 530.544.3600 or Elite Tahoe Taxi at 530.580.8294. Advanced reservations are strongly recommended! On-the-spot prices will be much higher.</p>
 
                     <p>A more affordable option, especially for singles, is <a href="http://www.northlaketahoeexpress.com/">North Lake Tahoe Express Shuttle</a>. It’s a scheduled shuttle for $45 one way (or less, if you have more people). Advance reservations are required. Call 866.216.5222. Here are the times:</p>
                     <p class="indent no-margin">Leaving Reno Airport daily at:</p>
@@ -198,7 +197,6 @@
                     <ul class="indent">
                         <li>The Northstar Lodging options include free ice-skating and 2 free skate rentals at the Village Rink. Look for the vouchers in your check-in packet!</li>
                         <li>Lodging also comes with $2 access to the outdoor spas, pools, fitness center, game room and arcade</li>
-                        <li>Stop by to add your own creative Snowman to our Contest Gallery. Prizes awarded at the Donuts and Coffee Send Off on Sunday morning. Location TBD.</li>
                         <li>The Ritz Carlton has <a href="http://tiny.cc/g4e53w">an amazing, full service, scenic spa</a>. Schedule ahead for this one!</li>
                         <li><a href="http://tiny.cc/o2e53w">This link</a> has info for a bunch more activities like snow tubing, pottery painting, candle-making, snowshoeing, cross-country skiing, and using a bungee rig to slingshot yourself up into the winter sky</li>
                     </ul>
