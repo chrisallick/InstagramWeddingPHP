@@ -10,7 +10,7 @@
         <link href='./css/reset.css' media='all' rel='stylesheet' type='text/css' />
         <link href='./css/main.css' media='all' rel='stylesheet' type='text/css' />
         
-        <script src='./js/cache.js' type='text/javascript'></script>
+        <script src='./js/_cache.js' type='text/javascript'></script>
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js' type='text/javascript'></script>
         <script src='./js/jq.easing.js' type='text/javascript'></script>
         <script src='./js/main.js' type='text/javascript'></script>
