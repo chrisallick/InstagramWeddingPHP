@@ -1,11 +1,13 @@
 <?php
+	//echo getcwd();
+	
 	include "./token.php";
 
 	$pics = array();
 
 	$next_url = "https://api.instagram.com/v1/tags/craigandbeegetmarried/media/recent?access_token=" . $token;
 
-	echo "[";
+	$contents = "var pics = [";
 
     while( $next_url != "" ) {
 		$json = file_get_contents($next_url);
@@ -13,7 +15,7 @@
 
 	    foreach( $json["data"] as $data ) {
             $url = $data["images"]["low_resolution"]["url"];
-            echo "\"" . $url . "\",<br/>";
+            $contents .= "\"" . $url . "\",<br/>";
 	    }
 
 		if( array_key_exists('next_url', $json["pagination"]) ) {
@@ -23,5 +25,9 @@
 		}
     }
 
-    echo "];";
+    $contents .= "];";
+
+	$file = '/js/cache.js';
+
+	file_put_contents($file, $contents);
 ?>
