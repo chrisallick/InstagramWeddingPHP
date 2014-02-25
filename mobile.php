@@ -14,7 +14,7 @@
         <script src='./js/jq.easing.js' type='text/javascript'></script>
         <script src='./js/cache.js' type='text/javascript'></script>
         <script src='./js/mobile.js' type='text/javascript'></script>
-        <script src='./js/Instagram.js' type='text/javascript'></script>
+        <script src='./js/NewInstagram.js' type='text/javascript'></script>
         <script src='./js/plugins.js' type='text/javascript'></script>
     </head>
     <body>

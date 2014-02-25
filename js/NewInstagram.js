@@ -75,10 +75,6 @@ Instagram = function( _pics, _el ) {
 		var el = $(".photo:eq("+img+")");
 		self.lastAnimated = img;
 
-		//console.log( "animate", img );
-
-		//console.log(  self.new_images, self.currentNextImage );
-
 		var next = self.new_images[self.currentNextImage].cloneNode(); 
 		self.currentNextImage++;
 		if( self.currentNextImage >= self.new_images.length ) {
