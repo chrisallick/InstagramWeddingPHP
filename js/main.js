@@ -1,34 +1,3 @@
-fetchMorePhotos = function() {
-	clearTimeout( fetch_timer );
-	/*
-		make api call to instagram
-	*/
-	var q = "./instagram.php";
-	$.ajax({
-	    url: q,
-	    type: "GET",
-	    dataType: "JSON",
-	    success:function(data){
-			// console.log( data.length );
-			// console.log( data );
-			var new_images = new Array()
-	    	for( var j = 0, data_len = data.length; j < data_len; j++ ) {
-		    	if( pics.indexOf(data[j]) == -1 ) {
-		    		new_images.push(data[j]);
-		    		console.log("new image");
-		    	} else {
-		    		console.log("not new");
-		    	}
-	    	}
-	    	if( new_images.length > 0 ) {
-	    		instagram.addImages( new_images );
-	    	}
-	    }
-	});
-
-	fetch_timer = setTimeout( fetchMorePhotos, 30000 );
-}
-
 runFade = function() {
 	faded = true;
 	clearTimeout( fade_timer );
@@ -121,6 +90,7 @@ $(document).ready(function() {
 			if( !faded ) {
 				clearTimeout( fade_timer );
 				runFade();
+				setTimeout( function(){ instagram.animate(); }, 1000);
 			}
 		});
 		fade_timer = setTimeout( runFade, 5000 );

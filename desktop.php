@@ -14,7 +14,7 @@
         <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js' type='text/javascript'></script>
         <script src='./js/jq.easing.js' type='text/javascript'></script>
         <script src='./js/main.js' type='text/javascript'></script>
-        <script src='./js/Instagram.js' type='text/javascript'></script>
+        <script src='./js/NewInstagram.js' type='text/javascript'></script>
         <script src='./js/plugins.js' type='text/javascript'></script>
     </head>
     <body>
