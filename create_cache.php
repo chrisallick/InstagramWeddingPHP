@@ -1,6 +1,4 @@
-<?php
-	//echo getcwd();
-	
+<?php	
 	include "./token.php";
 
 	$pics = array();
@@ -15,7 +13,7 @@
 
 	    foreach( $json["data"] as $data ) {
             $url = $data["images"]["low_resolution"]["url"];
-            $contents .= "\"" . $url . "\",<br/>";
+            $contents .= "\"" . $url . "\",";
 	    }
 
 		if( array_key_exists('next_url', $json["pagination"]) ) {
@@ -27,7 +25,7 @@
 
     $contents .= "];";
 
-	$file = '/js/cache.js';
+	$file = './js/cache.js';
 
 	file_put_contents($file, $contents);
 ?>
